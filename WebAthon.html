@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<title>
+.headings
+{
+    color: darkslateblue;
+    font-weight: bold;
+    font-style: italic;
+    font-family: cursive;
+}
+.hstyle
+{
+    background-color: lightblue;
+    height: 52px;
+    text-align: center;
+    padding-top: 19px;
+    border: 2px solid black !important;
+    font-family: cursive;
+}
+.form
+{
+    background-color: rgba(240,240,240);
+    border: 2px solid black;
+    padding-left: 31px;
+    padding-bottom: 10px;
+}
+.button
+{
+    background-color: lightblue;
+    border: 1px solid black;
+    font-weight: bold;
+    font-family: cursive;
+}
+</style>
+</head>
+<body>
+<h2 class='hstyle' >Registration form</h2>
+<form class='form'>
+<h4 class='headings'>User id:</h4>
+<input id="userid" type="text" placeholder="enter name" ><br>
+<h4 class='headings'>Email id:</h4>
+<input id='Emailid' type="text"placeholder="enter Email id"><br>
+<h4 class='headings'>Password:</h4>
+<input id='pwd' type="password"placeholder="enter password"><br>
+<h4 class='headings'>Phone number:</h4>
+<input id='number' type="text"placeholder="enter your phone number"><br>
+<h4 class='headings'>Address:</h4>
+<textarea id='address' name="ade"cols="50" rows="10" placeholder="enter address"></textarea><br>
+<br>
+<button class='button' type="submit" onclick="buttonclik()" value="submit">SUBMIT</button>
+</form>
+</body>
+</html>
+<script>
+
+function buttonclik()
+{
+if(document.getElementById("userid").value.length != 0 && document.getElementById("Emailid").value.length !=0 && document.getElementById("pwd").value.length!=0 && document.getElementById("number").value.length!=0 && document.getElementById("address").value.length != 0)
+{
+   alert("registration Successful");
+}
+else
+{
+   alert("registration failed");
+}
+}
+</script>
